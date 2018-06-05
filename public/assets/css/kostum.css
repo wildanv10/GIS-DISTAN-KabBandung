@@ -1,0 +1,449 @@
+/* ------------------------------------------------------------------------ CSS KOSTUM */
+
+body{
+    background-color: #f1f1f1;
+    color: #515151;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.a-berita{
+    color: #515151 !important;
+}
+.a-berita:hover, .a-berita:active{
+    color: #2b2b2b !important;
+}
+
+.navbar-brand img{
+    width: 460px;
+    height: 80px;
+}
+
+nav{
+    padding: 0;
+}
+.a-404{
+    font-weight: bold;
+    color: #f1f1f1 !important;
+}
+
+.a-404:hover{
+    color: #f1f1f1 !important;
+    opacity: 0.5;
+}
+
+.a-menu{
+    font-weight: bold;
+    color: #f1f1f1 !important;
+    border-bottom: solid 3px #28a745;
+    margin-bottom: 0px !important;
+}
+
+.a-menu:hover{
+    
+    color: rgb(251, 255, 28) !important;
+    border-bottom: solid 3px rgb(251, 255, 28);
+}
+
+.border-bottom-costum{
+    border-bottom: solid 1px #049372;
+}
+.bg-dark-costum{
+    background-color: #333a41e0;
+    color: #f8f9fa;
+    display: block;
+    font-size: 15px !important;
+}
+
+.text-judul-berita{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.text-meta-berita{
+    margin-top: -10px;
+    font-size: 11px;
+    color: #919191;
+    font-weight: bold;
+}
+
+.text-isi-berita{
+    text-indent: 20px;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+.galeri-beranda{
+    margin-top: -50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 0px #919191;
+}
+
+.galeri-beranda img{
+    width: 20%;
+    margin: 10px;
+}
+
+.header-section-border{
+    height: 2px;
+    width: 50px;
+    margin-left: -25px;
+    margin-bottom: 60px;
+    content: "";
+    left: 50%;
+    right: 50%;
+    background: #00B16A;
+}
+
+.img-link a img{
+    margin-bottom: 15px;
+}
+.img-link a img:hover{
+    opacity: 0.7;
+}
+
+.p-profil{
+    white-space: normal;
+    text-align: justify;
+    padding-left: 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+/* ------------------------------------------------------------------------ CSS LOGIN ADMIN */
+
+.bg-body-login {
+    /* The image used */
+    background-image: url("../../images/img/bg-login.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------------------------------------------------------ CSS ADMIN */
+.modal-backdrop{
+    z-index: 1 !important;
+}
+
+.card-admin{
+    width:23%; 
+    margin:5px;
+}
+
+.errmsg{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------ CSS CARROUSEL BERANDA */
+
+
+
+#slideshow { 
+}
+
+#slideshow div img{
+    width: 100%;  
+    display: block;
+    
+}
+
+#slideshow > div { 
+    position: absolute; 
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../../images/img/bg-login.jpg");
+
+    /* Full height */
+    height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-full {
+    /* The image used */
+    background-image: url("../../images/img/bg-login.jpg");
+
+    /* Full height */
+    height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-slideshow {
+
+    /* The image used */
+    background-image: url("../../images/img/1.jpg");
+
+    /* Full height */
+    height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.9;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+
+@media (max-width: 576px) { 
+    .parallax-slideshow {
+        height: 100px !important; 
+    }
+    
+    .galeri-beranda{
+        margin-top: 0px;
+    }
+    .galeri-beranda img{
+        width: 30%;
+    }
+
+    .bg-dark-costum{
+        font-size: 13px;
+        display: none;
+    }
+
+    .navbar-brand img{
+        width: 100%;
+        height: auto;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .a-menu{
+        border-bottom: none;
+        margin-bottom: 0px !important;
+    }.a-menu:hover{
+        border-bottom: none;
+    }
+
+    .card-admin{
+        width:31%; 
+    }
+    
+}
+@media (max-width: 992px) { 
+    .parallax-slideshow {
+        height: 450px !important; 
+    }
+    .parallax-full {
+        height: 984px !important; 
+    }
+    
+    .galeri-beranda{
+        margin-top: -30px;
+    }
+    .galeri-beranda img{
+        width: 40%;
+    }
+
+    .bg-dark-costum{
+        font-size: 13px !important;
+    }
+
+    .a-menu{
+        border-bottom: none;
+        margin-bottom: 0px !important;
+    }.a-menu:hover{
+        border-bottom: none;
+    }
+
+    .card-admin{
+        width:31%; 
+    }
+}
+@media (min-width: 1368px) { 
+    .parallax-slideshow {
+        height: 880px; 
+    }
+    
+    .galeri-beranda{
+        margin-top: 100px;
+    }
+
+    .card-admin{
+        width:19%; 
+    }
+}
+
+
+/* ------------------------------------------------------------------------ CSS AFFIX */
+.navbar {
+  border-radius: 0;
+  transition: all 0.3s ease-out;
+}
+
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* fixed to top styles */
+.affix.navbar {
+    
+}
+.affix.navbar .nav-item>a, 
+.affix.navbar .navbar-brand {
+}
+
+
+/* ------------------------------------------------------------------------ CSS MODAL IMAGE */
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    cursor: pointer;
+
+}
+
+.imageGaleri:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1042; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 20px 0px 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------------------ CSS PETA */
+
+.f_peta{
+    width: 100%;
+    height: 600px;
+}
+@media (min-width: 1368px) { 
+    .f_peta{
+        height: 900px;
+    }
+}
+
+
+
+
+/* ------------------------------------------------------------------------ CSS FOOTER */
+
+#footer{
+    width: 100%;
+    font-size: 15px;
+    clear: both;
+    position: relative;
+    height: 250px;
+    color: #fefefe;
+    -webkit-align-content: center;
+    align-content: center;
+    text-align: center
+}
+
+.ftop{
+    width: 100%;
+    height: 200px;
+    background-color: #28a745;
+    
+}
+
+.fbottom{
+    width: 100%;
+    height: 50px;
+    background-color: #175a26;
+    padding: 0px 0px 10px 5px;
+}
+
+.fsmBox{
+    display:block; margin-left: auto; margin-right: auto;
+}
