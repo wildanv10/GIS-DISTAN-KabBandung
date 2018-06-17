@@ -17,16 +17,29 @@ Route::get('/', 'BerandaController@index');
 Route::get('/beranda', 'BerandaController@index');
 Route::get('/berita', 'BerandaController@halamanBerita');
 
+//----controller lihat berita
 Route::get('/berita-lihat/{judul}', 'BerandaController@tampilBerita');
 
+//----controller galeri
 Route::get('/galeri', 'BerandaController@halamanGaleri');
 
+//----controller profil
 Route::get('/profil', function () {
     return view('profil');
 });
+
+//----controller peta
 Route::get('/peta', function () {
     return view('peta');
 });
+
+//----controller Chart
+Route::resource('/chart', 'ChartController');
+Route::get('/data', function () {
+    return view('data');
+});
+
+//----controller kontak
 Route::get('/kontak', function () {
     return view('kontak');
 });
@@ -74,3 +87,4 @@ Route::resource('admin/berita', 'BeritaController');
 
 //----controller Kontak
 Route::resource('admin/kontak', 'KontakController');
+
