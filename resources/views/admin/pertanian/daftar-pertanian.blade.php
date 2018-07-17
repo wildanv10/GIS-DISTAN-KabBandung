@@ -29,8 +29,8 @@
                         @foreach($kategoriPangan as $g)
                         
                         <li class="list-group-item">
-                            <a href="{{ url('admin/pertanian/'.$g->kodePangan) }}">
-                                {{$g->namaPangan}}
+                            <a href="{{ url('admin/pertanian/'.$g->kodepangan) }}">
+                                {{$g->namapangan}}
                             </a>
                         </li>
 
@@ -44,8 +44,8 @@
                         @foreach($kategoriSayuran as $g)
                         
                         <li class="list-group-item">
-                            <a href="{{ url('admin/pertanian/'.$g->kodePangan) }}">
-                                {{$g->namaPangan}}
+                            <a href="{{ url('admin/pertanian/'.$g->kodepangan) }}">
+                                {{$g->namapangan}}
                             </a>
                         </li>
 
@@ -60,8 +60,8 @@
                         @foreach($kategoriBuah as $g)
                         
                         <li class="list-group-item">
-                            <a href="{{ url('admin/pertanian/'.$g->kodePangan) }}">
-                                {{$g->namaPangan}}
+                            <a href="{{ url('admin/pertanian/'.$g->kodepangan) }}">
+                                {{$g->namapangan}}
                             </a>
                         </li>
 
@@ -76,8 +76,8 @@
                         @foreach($kategoriBio as $g)
                         
                         <li class="list-group-item">
-                            <a href="{{ url('admin/pertanian/'.$g->kodePangan) }}">
-                                {{$g->namaPangan}}
+                            <a href="{{ url('admin/pertanian/'.$g->kodepangan) }}">
+                                {{$g->namapangan}}
                             </a>
                         </li>
 
@@ -91,8 +91,8 @@
                         @foreach($kategoriKebun as $g)
                         
                         <li class="list-group-item">
-                            <a href="{{ url('admin/pertanian/'.$g->kodePangan) }}">
-                                {{$g->namaPangan}}
+                            <a href="{{ url('admin/pertanian/'.$g->kodepangan) }}">
+                                {{$g->namapangan}}
                             </a>
                         </li>
 
