@@ -75,6 +75,12 @@ Route::get('admin/kategori', 'KategoriController@index');
 
 Route::get('admin/pertanian/{pangan}', 'LiveEditController@tampil');
 Route::post('admin/pertanian/updates', 'LiveEditController@updates');
+//----controller Pertanian Pangan
+Route::get('admin/pertanianpangan/{pangan}', 'LiveEditPanganController@tampil');
+Route::post('admin/pertanianpangan/updates', 'LiveEditPanganController@updates');
+//----controller Pertanian Ternak
+Route::get('admin/pertanianternak/{pangan}', 'LiveEditTernakController@tampil');
+Route::post('admin/pertanianternak/updates', 'LiveEditTernakController@updates');
 
 //----controller Admin
 Route::resource('admin/list-admin', 'HalamanAdminController');

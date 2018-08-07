@@ -4,11 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 use App\Http\Requests;
 
 class KategoriController extends Controller
 {
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index(){
 
         $data['kategoriPangan'] = DB::table('kategori')
@@ -33,6 +41,11 @@ class KategoriController extends Controller
 
         $data['kategoriKebun'] = DB::table('kategori')
             ->where('kodekategori', '=', 'k005')
+            ->orderBy('kodepangan', 'asc')
+            ->get();
+
+        $data['kategoriTernak'] = DB::table('kategori')
+            ->where('kodekategori', '=', 'k006')
             ->orderBy('kodepangan', 'asc')
             ->get();
 

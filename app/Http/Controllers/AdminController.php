@@ -50,7 +50,7 @@ class AdminController extends Controller
         return view('admin.login');
     }
 
-    protected $redirectAfterLogout = '/admin';
+    protected $redirectAfterLogout = '/admin/login';
     public function logout(Request $request)
     {
         $request->session()->flush();

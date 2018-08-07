@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\DB;
 
 use App\Http\Requests;
 
-class LiveEditController extends Controller
+class LiveEditTernakController extends Controller
 {
+    
     public function __construct()
     {
         $this->middleware('auth');
@@ -23,22 +24,21 @@ class LiveEditController extends Controller
     public function tampil($pangan)
     {
         
-        $data['buah'] = DB::table('dataPanganBuah')
+        $data['buah'] = DB::table('dataTernak')
             ->where('kodepangan', $pangan)
             ->orderBy('id', 'asc')
             ->get();
 
-        return view('admin.pertanian.liveedit', $data);
+        return view('admin.pertanian.liveeditternak', $data);
     }
 
 
 
     public function updates(Request $request){
         $data = array();
-        $data['jumlahtanam'] = $request->jt;
-        $data['jumlahtanamanmenghasilkan'] = $request->jtm;
-        $data['produksi'] = $request->produksi;
+        $data['jantan'] = $request->jt;
+        $data['betina'] = $request->jtm;
 
-        DB::table('dataPanganBuah')->where('id', $request->id)->update($data);
+        DB::table('dataTernak')->where('id', $request->id)->update($data);
     }
 }

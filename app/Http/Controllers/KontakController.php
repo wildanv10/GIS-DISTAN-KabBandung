@@ -11,7 +11,7 @@ use App\Kontak;
 class KontakController extends Controller
 {
     
-
+    
     public function index(){
         $data['kontak'] = DB::table('kontaks')->get();
         return view('admin.kontak.kontak',$data);
